@@ -1,0 +1,39 @@
+﻿📌 Descripción general
+Este script en PHP implementa una lista enlazada simple. Permite insertar elementos (nombres) al inicio de la lista y luego imprimir todos los elementos como una lista HTML no ordenada (<ul>).
+
+
+🧩 Funcionamiento
+Se define la clase Nodo:
+
+
+Contiene un valor (dato) y una referencia al siguiente nodo (siguiente).
+
+
+El constructor inicializa el dato y establece siguiente como null.
+
+
+Se define la clase listaenlazada:
+
+
+Tiene una propiedad inicio que apunta al primer nodo.
+
+
+El método insertar($dato) agrega un nuevo nodo al principio de la lista.
+
+
+El método imprimirHTML() recorre la lista y muestra cada dato dentro de un elemento <li>, generando una lista HTML con etiquetas <ul>.
+
+
+Se crean instancias con los nombres "johan", "Felipe" y "Karol", en ese orden, por lo que el primero en mostrarse será "Karol" (último insertado).
+
+
+🛠️ Dependencias
+No requiere dependencias externas. Funciona con PHP 7 o superior.
+
+
+📥 Entrada esperada
+Los datos se insertan directamente mediante llamadas al método insertar() dentro del código.
+
+
+📤 Salida
+HTML en formato de lista no ordenada (<ul>), con cada nombre como un ítem (<li>).
